@@ -1,6 +1,3 @@
-
-/* Configurações gerais */
-
 * {
     margin: 0;
     padding: 0;
@@ -12,13 +9,13 @@ html {
 }
 
 body {
-    background-color: #1a103c;
+    background-color: #1a0f30;
     background-image: radial-gradient(
         circle,
-        #2d1b54 10%,
-        #130a2a 90%
+        #2d1545 10%,
+        #120822 90%
     );
-    color: #f1e9ff;
+    color: #fff0f6;
     font-family: Arial, sans-serif;
     min-height: 100vh;
     line-height: 1.6;
@@ -34,9 +31,6 @@ a {
     text-decoration: none;
 }
 
-
-/* Cabeçalho */
-
 .cabecalho {
     padding: 20px 0;
 }
@@ -49,9 +43,12 @@ a {
 }
 
 .logo {
-    color: #ffca68;
+    background: linear-gradient(135deg, #FFE89E 0%, #F5AF19 50%, #E69500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 800;
 }
 
 .menu {
@@ -68,11 +65,8 @@ a {
 }
 
 .menu a:hover {
-    color: #ffca68;
+    color: #FF7EB9;
 }
-
-
-/* Seção inicial */
 
 .hero {
     min-height: 620px;
@@ -95,7 +89,7 @@ a {
 
 .subtitulo {
     display: block;
-    color: #ffca68;
+    color: #FF7EB9;
     font-size: 22px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -103,10 +97,14 @@ a {
 }
 
 .hero h1 {
-    color: #ffca68;
+    background: linear-gradient(135deg, #FFE89E 0%, #F5AF19 50%, #E69500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-size: clamp(40px, 4.2vw, 68px);
     line-height: 1.2;
     margin-bottom: 20px;
+    font-weight: 800;
 }
 
 .hero-texto p {
@@ -117,21 +115,19 @@ a {
 
 .botao {
     display: inline-block;
-    background-color: #ffca68;
-    color: #130a2a;
+    background-color: #FF7EB9;
+    color: #ffffff;
     padding: 15px 35px;
     border-radius: 40px;
     font-size: 20px;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 15px rgba(255, 126, 185, 0.3);
 }
 
 .botao:hover {
-    background-color: #ffda91;
+    background-color: #ff9ecb;
 }
-
-
-/* Composição da Cecília e da nave */
 
 .hero-imagens {
     position: relative;
@@ -142,9 +138,6 @@ a {
     overflow: hidden;
 }
 
-
-/* Nave ao fundo */
-
 .nave-hero {
     position: absolute;
     width: 85%;
@@ -152,27 +145,11 @@ a {
     top: -35px;
     right: -5%;
     z-index: 1;
-
     object-fit: contain;
     object-position: top right;
-
-    
-    -webkit-mask-image: linear-gradient(
-        to bottom,
-        black 0%,
-        black 55%,
-        transparent 100%
-    );
-
-    mask-image: linear-gradient(
-        to bottom,
-        black 0%,
-        black 55%,
-        transparent 100%
-    );
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 55%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, black 55%, transparent 100%);
 }
-
-/* Cecília em primeiro plano */
 
 .cecilia-hero {
     position: absolute;
@@ -185,19 +162,23 @@ a {
     object-position: bottom center;
 }
 
-
-/* Seções gerais */
-
 .secao {
     padding: 100px 0;
     scroll-margin-top: 30px;
 }
 
 .secao h2 {
-    color: #ffca68;
+    background: linear-gradient(135deg, #FFE89E 0%, #F5AF19 50%, #E69500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-size: 44px;
     text-align: center;
     margin-bottom: 25px;
+    font-weight: 800;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .secao-descricao {
@@ -208,11 +189,8 @@ a {
     line-height: 1.8;
 }
 
-
-/* Personagens */
-
 .personagens {
-    background-color: rgba(255, 255, 255, 0.04);
+    background-color: rgba(255, 255, 255, 0.03);
 }
 
 .personagem-destaque {
@@ -235,18 +213,19 @@ a {
 }
 
 .personagem-texto h3 {
-    color: #ffca68;
+    background: linear-gradient(135deg, #FFE89E 0%, #F5AF19 50%, #E69500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-size: 34px;
     margin-bottom: 20px;
+    font-weight: 800;
 }
 
 .personagem-texto p {
     font-size: 21px;
     line-height: 1.8;
 }
-
-
-/* Missões */
 
 .lista-missoes {
     display: grid;
@@ -260,8 +239,8 @@ a {
     align-items: center;
     gap: 25px;
     padding: 30px;
-    background-color: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 202, 104, 0.25);
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 2px solid rgba(255, 126, 185, 0.2);
     border-radius: 20px;
 }
 
@@ -278,16 +257,20 @@ a {
 }
 
 .numero-missao {
-    color: #ffca68;
+    color: #FF7EB9;
     font-size: 15px;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
 .missao-conteudo h3 {
-    color: #ffca68;
+    background: linear-gradient(135deg, #FFE89E 0%, #F5AF19 50%, #E69500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-size: 30px;
     margin: 12px 0;
+    font-weight: 800;
 }
 
 .missao-conteudo p {
@@ -298,7 +281,7 @@ a {
 .status-missao {
     display: inline-block;
     margin-top: 20px;
-    color: #ffca68;
+    color: #FF7EB9;
     font-size: 15px;
     font-weight: bold;
 }
@@ -307,13 +290,11 @@ a {
     justify-content: center;
     text-align: center;
     border-style: dashed;
+    border-color: rgba(242, 201, 76, 0.4);
 }
 
-
-/* Autora */
-
 .autora {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 .autora-conteudo {
@@ -331,17 +312,22 @@ a {
     flex-shrink: 0;
     object-fit: cover;
     border-radius: 50%;
-    border: 6px solid #ffca68;
+    border: 6px solid #D4AF37; 
 }
+
 
 .autora-texto {
     flex: 1;
 }
 
 .autora-texto h3 {
-    color: #ffca68;
+    background: linear-gradient(135deg, #FFE89E 0%, #F5AF19 50%, #E69500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-size: 36px;
     margin-bottom: 20px;
+    font-weight: 800;
 }
 
 .autora-texto p {
@@ -350,18 +336,13 @@ a {
     margin-bottom: 25px;
 }
 
-
-/* Rodapé */
-
 .rodape {
     text-align: center;
     padding: 35px 20px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.25);
     font-size: 16px;
+    color: rgba(255, 240, 246, 0.7);
 }
-
-
-/* Responsividade */
 
 @media (max-width: 1000px) {
 
@@ -535,8 +516,6 @@ a {
     }
 }
 
-/* Amigos da Cecília */
-
 .personagens-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -546,17 +525,18 @@ a {
 }
 
 .personagem-card {
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 202, 104, 0.3);
+    background: rgba(255, 255, 255, 0.04);
+    border: 2px solid rgba(212, 175, 55, 0.25); 
     border-radius: 20px;
     padding: 25px 15px;
     text-align: center;
-    transition: transform 0.3s, border-color 0.3s;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
 .personagem-card:hover {
     transform: translateY(-8px);
-    border-color: #ffca68;
+    border-color: #FF7EB9;
+    box-shadow: 0 5px 15px rgba(255, 126, 185, 0.2);
 }
 
 .personagem-card img {
@@ -568,11 +548,13 @@ a {
 }
 
 .personagem-card h3 {
-    color: #ffca68;
+    background: linear-gradient(135deg, #FFE89E 0%, #F5AF19 50%, #E69500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-size: 25px;
+    font-weight: 800;
 }
-
-/* Tablets */
 
 @media (max-width: 900px) {
     .personagens-grid {
@@ -580,16 +562,12 @@ a {
     }
 }
 
-/* Celulares */
-
 @media (max-width: 480px) {
     .personagens-grid {
         grid-template-columns: 1fr;
         max-width: 320px;
     }
 }
-
-/* Ajustes na seção de personagens */
 
 .personagem-destaque {
     gap: 45px;
@@ -617,8 +595,6 @@ a {
 .personagem-card h3 {
     font-size: 25px;
 }
-
-/* Ajustes para celulares */
 
 @media (max-width: 768px) {
     .personagem-imagem {
