@@ -12,7 +12,6 @@
 
 <body>
 
-    <!-- Cabeçalho -->
     <header class="cabecalho">
         <div class="container cabecalho-conteudo">
 
@@ -33,7 +32,6 @@
 
     <main>
 
-        <!-- Seção inicial -->
         <section id="inicio" class="hero">
 
             <div class="container hero-conteudo">
@@ -61,8 +59,6 @@
 
                 </div>
 
-
-                <!-- Cecília e nave espacial -->
                 <div class="hero-imagens">
 
                     <img
@@ -83,8 +79,6 @@
 
         </section>
 
-
-        <!-- Personagens -->
         <section id="personagens" class="secao personagens">
 
             <div class="container">
@@ -121,29 +115,59 @@
 
 </div>
 
-<!-- Galeria dos amigos da Cecília -->
-
 <div class="personagens-grid">
 
-    <article class="personagem-card">
-        <img src="imagens/Aurora.png" alt="Aurora, a corujinha">
-        <h3>Aurora</h3>
-    </article>
+    <div class="personagem-card" onclick="virarCard(this)">
+        <div class="card-interior">
+            <div class="card-frente">
+                <img src="imagens/Aurora.png" alt="Aurora, a corujinha">
+                <h3>Aurora</h3>
+            </div>
+            <div class="card-verso">
+                <h3>Aurora</h3>
+                <p>[INSERIR DESCRIÇÃO DA AURORA AQUI]</p>
+            </div>
+        </div>
+    </div>
 
-    <article class="personagem-card">
-        <img src="imagens/Luna.png" alt="Luna, a raposinha">
-        <h3>Luna</h3>
-    </article>
+    <div class="personagem-card" onclick="virarCard(this)">
+        <div class="card-interior">
+            <div class="card-frente">
+                <img src="imagens/Luna.png" alt="Luna, a raposinha">
+                <h3>Luna</h3>
+            </div>
+            <div class="card-verso">
+                <h3>Luna</h3>
+                <p>[INSERIR DESCRIÇÃO DA LUNA AQUI]</p>
+            </div>
+        </div>
+    </div>
 
-    <article class="personagem-card">
-        <img src="imagens/Melinda.png" alt="Melinda, a esquilinha">
-        <h3>Melinda</h3>
-    </article>
+    <div class="personagem-card" onclick="virarCard(this)">
+        <div class="card-interior">
+            <div class="card-frente">
+                <img src="imagens/Melinda.png" alt="Melinda, a esquilinha">
+                <h3>Melinda</h3>
+            </div>
+            <div class="card-verso">
+                <h3>Melinda</h3>
+                <p>[INSERIR DESCRIÇÃO DA MELINDA AQUI]</p>
+            </div>
+        </div>
+    </div>
 
-    <article class="personagem-card">
-        <img src="imagens/Tito.png" alt="Tito, a tartaruga">
-        <h3>Tito</h3>
-    </article>
+    <div class="personagem-card" onclick="virarCard(this)">
+        <div class="card-interior">
+            <div class="card-frente">
+                <img src="imagens/Tito.png" alt="Tito, a tartaruga">
+                <h3>Tito</h3>
+            </div>
+            <div class="card-verso">
+                <h3>Tito</h3>
+                <p>[INSERIR DESCRIÇÃO DO TITO AQUI]</p>
+            </div>
+        </div>
+    </div>
 
 </div>
 
@@ -151,8 +175,6 @@
 
 </section> 
 
-
-        <!-- Missões -->
         <section id="missoes" class="secao missoes">
 
             <div class="container">
@@ -167,7 +189,6 @@
 
                 <div class="lista-missoes">
 
-                    <!-- Primeira missão -->
                     <article class="card-missao">
 
                         <img
@@ -198,8 +219,6 @@
 
                     </article>
 
-
-                    <!-- Próximas missões -->
                     <article class="card-missao proxima-missao">
 
                         <div class="missao-conteudo">
@@ -227,8 +246,6 @@
 
         </section>
 
-
-        <!-- Autora -->
         <section id="autora" class="secao autora">
 
             <div class="container">
@@ -270,13 +287,13 @@
 
     </main>
 
-
-    <!-- Rodapé -->
     <footer class="rodape">
 
-        <p>Cecília nas Estrelas</p>
+        <p>®Cecília nas Estrelas</p>
 
     </footer>
 
+
+    <script src="script.js"></script>
 </body>
 </html>
